@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal e currículo online de Vinicius, desenvolvedor de software.">
+  <title>Vinicius | Desenvolvedor de Software</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header fixo com menu de navegação por âncoras -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Menu principal">
+      <a class="brand" href="#sobre" aria-label="Ir para a seção Sobre mim">
+        <span class="brand-mark">V</span>
+        <span>Vinicius</span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro ou escuro">
+          Tema escuro
+        </button>
+
+        <!-- Botão hambúrguer usado apenas em telas menores -->
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção inicial e apresentação pessoal -->
+    <section class="hero section" id="sobre">
+      <div class="section-content hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Portfólio pessoal</p>
+          <h1>Olá, eu sou <span>Vinicius</span>.</h1>
+          <p class="hero-description">
+            Sou desenvolvedor de software com interesse em tecnologia, desenvolvimento web,
+            aprendizado contínuo e criação de soluções digitais úteis, organizadas e acessíveis.
+          </p>
+          <p>
+            No meu dia a dia, gosto de estudar programação, acompanhar novidades de tecnologia,
+            praticar inglês e desenvolver projetos pessoais para evoluir como profissional.
+          </p>
+          <div class="hero-buttons">
+            <a class="button primary" href="#portfolio">Ver projetos</a>
+            <a class="button secondary" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Resumo profissional">
+          <div class="profile-avatar">V</div>
+          <h2>Desenvolvedor de Software</h2>
+          <p>Foco em fundamentos web, lógica de programação e construção de interfaces responsivas.</p>
+          <ul>
+            <li>HTML5, CSS3 e JavaScript</li>
+            <li>C# e fundamentos de backend</li>
+            <li>Estudo contínuo de Java</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Seção de formação acadêmica e conhecimentos -->
+    <section class="section alternate" id="formacao">
+      <div class="section-content">
+        <p class="eyebrow">Formação</p>
+        <h2>Base acadêmica e conhecimentos técnicos</h2>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Formação acadêmica</h3>
+            <p>
+              Tenho formação em Análise e Desenvolvimento de Sistemas e também estudo
+              Engenharia de Software, fortalecendo minha visão sobre desenvolvimento,
+              arquitetura, qualidade e manutenção de sistemas.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Conhecimentos</h3>
+            <p>
+              Possuo conhecimentos em HTML, CSS, JavaScript e C#, com foco em criar páginas
+              organizadas, responsivas e com boas práticas de estruturação de código.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Estudos atuais</h3>
+            <p>
+              Atualmente estou estudando Java e desenvolvimento web para ampliar minha base
+              técnica e desenvolver soluções cada vez mais completas.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Idiomas</h3>
+            <p>
+              Tenho inglês em nível de estudo e aprimoramento, buscando melhorar leitura,
+              vocabulário técnico e comunicação para a área de tecnologia.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção com cards de projetos do portfólio -->
+    <section class="section" id="portfolio">
+      <div class="section-content">
+        <p class="eyebrow">Portfólio</p>
+        <h2>Projetos e exercícios práticos</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Site de portfólio pessoal</h3>
+            <p>
+              Página de apresentação profissional com navegação por âncoras, layout responsivo,
+              alternância de tema e formulário validado com JavaScript.
+            </p>
+            <!-- Substituir href="#" pelo link real do GitHub ou GitHub Pages -->
+            <a href="#" aria-label="Abrir projeto Site de portfólio pessoal">Ver projeto</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Página institucional responsiva</h3>
+            <p>
+              Modelo de página para uma empresa fictícia, com seções de apresentação, serviços
+              e contato, adaptada para desktop, tablet e celular.
+            </p>
+            <!-- Substituir href="#" pelo link real do GitHub ou projeto publicado -->
+            <a href="#" aria-label="Abrir projeto Página institucional responsiva">Ver projeto</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Sistema simples de formulário com validação</h3>
+            <p>
+              Exercício com validação de campos obrigatórios, verificação de e-mail e mensagens
+              visuais de erro e sucesso usando JavaScript puro.
+            </p>
+            <!-- Substituir href="#" pelo link real do repositório ou demonstração -->
+            <a href="#" aria-label="Abrir projeto Sistema simples de formulário com validação">Ver projeto</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de contato com validação feita em JavaScript puro -->
+    <section class="section alternate" id="contato">
+      <div class="section-content contact-grid">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos conversar?</h2>
+          <p>
+            Use o formulário para enviar uma mensagem simulada. A validação acontece no navegador,
+            mostrando avisos na tela quando algum campo precisa ser corrigido.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+
+          <button class="button primary form-button" type="submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Vinicius. Portfólio desenvolvido com HTML, CSS e JavaScript puro.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
