@@ -3,26 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio pessoal e currículo online de Vinicius, desenvolvedor de software.">
-  <title>Vinicius | Desenvolvedor de Software</title>
+  <meta name="description" content="Portfólio profissional de Vinicius Dias Linck, Desenvolvedor Full Stack com experiência em C#/.NET, ASP.NET Core e desenvolvimento web.">
+  <title>Vinicius Dias Linck | Desenvolvedor Full Stack</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header fixo com menu de navegação por âncoras -->
+  <!-- Cabeçalho da página -->
   <header class="site-header">
     <nav class="navbar" aria-label="Menu principal">
       <a class="brand" href="#sobre" aria-label="Ir para a seção Sobre mim">
-        <span class="brand-mark">V</span>
+        <span class="brand-mark" aria-hidden="true">V</span>
         <span>Vinicius</span>
       </a>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro ou escuro">
-          Tema escuro
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar tema escuro" title="Ativar tema escuro">
+          <span class="theme-icon" id="themeIcon" aria-hidden="true">&#9789;</span>
         </button>
-
-        <!-- Botão hambúrguer usado apenas em telas menores -->
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
           <span></span>
           <span></span>
           <span></span>
@@ -31,166 +29,216 @@
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Seção inicial e apresentação pessoal -->
+    <!-- resumo profissional -->
     <section class="hero section" id="sobre">
       <div class="section-content hero-grid">
         <div class="hero-text">
-          <p class="eyebrow">Portfólio pessoal</p>
-          <h1>Olá, eu sou <span>Vinicius</span>.</h1>
+          <p class="eyebrow">Desenvolvedor Full Stack</p>
+          <h1>Olá, eu sou <span>Vinicius Dias Linck</span>.</h1>
           <p class="hero-description">
-            Sou desenvolvedor de software com interesse em tecnologia, desenvolvimento web,
-            aprendizado contínuo e criação de soluções digitais úteis, organizadas e acessíveis.
+            Desenvolvedor Full Stack com experiência no desenvolvimento de aplicações web, APIs RESTful
+            e soluções em C#/.NET e ASP.NET Core.
           </p>
           <p>
-            No meu dia a dia, gosto de estudar programação, acompanhar novidades de tecnologia,
-            praticar inglês e desenvolver projetos pessoais para evoluir como profissional.
+            Atuo com HTML, CSS, JavaScript, SQL Server e integração entre front-end e back-end,
+            desenvolvendo sistemas focados em desempenho, escalabilidade e experiência do usuário.
+            Também tenho vivência em suporte técnico bilíngue, metodologias ágeis e resolução de problemas.
           </p>
           <div class="hero-buttons">
-            <a class="button primary" href="#portfolio">Ver projetos</a>
+            <a class="button primary" href="#experiencia">Ver experiência</a>
             <a class="button secondary" href="#contato">Entrar em contato</a>
           </div>
         </div>
 
         <aside class="profile-card" aria-label="Resumo profissional">
-          <div class="profile-avatar">V</div>
-          <h2>Desenvolvedor de Software</h2>
-          <p>Foco em fundamentos web, lógica de programação e construção de interfaces responsivas.</p>
+          <img
+            class="profile-photo"
+            src="images/eu trabalho.jpg"
+            alt="Foto de Vinicius Dias Linck"
+            width="800"
+            height="800"
+          >
+          <h2>Desenvolvedor Full Stack</h2>
+          <p>Canoas, RS, Brasil</p>
           <ul>
-            <li>HTML5, CSS3 e JavaScript</li>
-            <li>C# e fundamentos de backend</li>
-            <li>Estudo contínuo de Java</li>
+            <li>C#/.NET e ASP.NET Core</li>
+            <li>Aplicações web e APIs RESTful</li>
+            <li>Front-end e back-end</li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <!-- Seção de formação acadêmica e conhecimentos -->
-    <section class="section alternate" id="formacao">
+    <!-- Histórico de experiências profissionais -->
+    <section class="section alternate" id="experiencia">
+      <div class="section-content">
+        <p class="eyebrow">Experiência profissional</p>
+        <h2>Minha trajetória</h2>
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>Desenvolvedor Full Stack Jr.</h3>
+                <p class="company">IN4Y</p>
+              </div>
+              <p class="period"><time datetime="2025-01">Janeiro de 2025</time> até o momento</p>
+            </div>
+            <ul>
+              <li>Criação de aplicações web completas em C# e ASP.NET Core.</li>
+              <li>Desenvolvimento de interfaces modernas e responsivas utilizando HTML, CSS, JavaScript e Razor Pages.</li>
+              <li>Implementação de APIs RESTful.</li>
+              <li>Desenvolvimento de rotinas de comunicação com hardware, fornecendo dados em tempo real para aplicações web e desktop.</li>
+              <li>Atuação tanto no back-end quanto no front-end.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>Analista de TI Bilíngue</h3>
+                <p class="company">HCL Technologies</p>
+              </div>
+              <p class="period"><time datetime="2021-06">Junho de 2021</time> a <time datetime="2022-05">maio de 2022</time></p>
+            </div>
+            <ul>
+              <li>Suporte técnico de primeiro e segundo níveis em português e inglês.</li>
+              <li>Resolução de incidentes relacionados a hardware, software e infraestrutura.</li>
+              <li>Instalação, configuração e atualização de aplicações corporativas e sistemas operacionais.</li>
+              <li>Trabalho seguindo SLAs e boas práticas de segurança.</li>
+              <li>Administração de chamados em plataformas de help desk.</li>
+              <li>Otimização de fluxos de atendimento e redução do backlog de tickets.</li>
+              <li>Utilização diária de inglês técnico e de negócios, tanto escrito quanto falado.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>Estagiário de Desenvolvimento</h3>
+                <p class="company">Perseus</p>
+              </div>
+              <p class="period"><time datetime="2020-01">Janeiro de 2020</time> a <time datetime="2020-04">abril de 2020</time></p>
+            </div>
+            <ul>
+              <li>Participação na equipe responsável por relatórios.</li>
+              <li>Manutenção e correção de módulos desenvolvidos em C# e SQL Server.</li>
+              <li>Suporte direto aos usuários.</li>
+              <li>Tradução de requisitos de negócio em ajustes técnicos.</li>
+              <li>Aplicação de fundamentos de versionamento, testes e boas práticas de entrega contínua.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-heading">
+              <div>
+                <h3>Suporte Técnico</h3>
+                <p class="company">SKA Tecnologia e Automação</p>
+              </div>
+              <p class="period"><time datetime="2019-04">Abril de 2019</time> a <time datetime="2020-01">janeiro de 2020</time></p>
+            </div>
+            <ul>
+              <li>Atendimento a clientes para instalação, configuração, migração e utilização do SolidWorks PDM.</li>
+              <li>Resolução de chamados de primeiro e segundo níveis.</li>
+              <li>Criação de guias rápidos, documentações e procedimentos.</li>
+              <li>Realização de treinamentos remotos e presenciais para clientes.</li>
+              <li>Atendimento de situações de alta criticidade e relacionamento com clientes.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação acadêmica e idiomas -->
+    <section class="section" id="formacao">
       <div class="section-content">
         <p class="eyebrow">Formação</p>
-        <h2>Base acadêmica e conhecimentos técnicos</h2>
-        <div class="info-grid">
+        <h2>Formação acadêmica e idiomas</h2>
+        <div class="info-grid education-grid">
           <article class="info-card">
-            <h3>Formação acadêmica</h3>
-            <p>
-              Tenho formação em Análise e Desenvolvimento de Sistemas e também estudo
-              Engenharia de Software, fortalecendo minha visão sobre desenvolvimento,
-              arquitetura, qualidade e manutenção de sistemas.
-            </p>
+            <h3>Universidade Luterana do Brasil - ULBRA</h3>
+            <p>Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+            <p class="status">Concluído</p>
           </article>
-
           <article class="info-card">
-            <h3>Conhecimentos</h3>
-            <p>
-              Possuo conhecimentos em HTML, CSS, JavaScript e C#, com foco em criar páginas
-              organizadas, responsivas e com boas práticas de estruturação de código.
-            </p>
+            <h3>Lincoln Idiomas</h3>
+            <p>Curso de inglês</p>
+            <p class="status">Concluído</p>
           </article>
-
-          <article class="info-card">
-            <h3>Estudos atuais</h3>
-            <p>
-              Atualmente estou estudando Java e desenvolvimento web para ampliar minha base
-              técnica e desenvolver soluções cada vez mais completas.
-            </p>
-          </article>
-
           <article class="info-card">
             <h3>Idiomas</h3>
-            <p>
-              Tenho inglês em nível de estudo e aprimoramento, buscando melhorar leitura,
-              vocabulário técnico e comunicação para a área de tecnologia.
-            </p>
+            <ul class="language-list">
+              <li><strong>Português:</strong> nativo</li>
+              <li><strong>Inglês:</strong> avançado</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Seção com cards de projetos do portfólio -->
-    <section class="section" id="portfolio">
+    <!-- Tecnologias e competências organizadas em etiquetas -->
+    <section class="section alternate" id="habilidades">
       <div class="section-content">
-        <p class="eyebrow">Portfólio</p>
-        <h2>Projetos e exercícios práticos</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Site de portfólio pessoal</h3>
-            <p>
-              Página de apresentação profissional com navegação por âncoras, layout responsivo,
-              alternância de tema e formulário validado com JavaScript.
-            </p>
-            <!-- Substituir href="#" pelo link real do GitHub ou GitHub Pages -->
-            <a href="#" aria-label="Abrir projeto Site de portfólio pessoal">Ver projeto</a>
-          </article>
-
-          <article class="project-card">
-            <h3>Página institucional responsiva</h3>
-            <p>
-              Modelo de página para uma empresa fictícia, com seções de apresentação, serviços
-              e contato, adaptada para desktop, tablet e celular.
-            </p>
-            <!-- Substituir href="#" pelo link real do GitHub ou projeto publicado -->
-            <a href="#" aria-label="Abrir projeto Página institucional responsiva">Ver projeto</a>
-          </article>
-
-          <article class="project-card">
-            <h3>Sistema simples de formulário com validação</h3>
-            <p>
-              Exercício com validação de campos obrigatórios, verificação de e-mail e mensagens
-              visuais de erro e sucesso usando JavaScript puro.
-            </p>
-            <!-- Substituir href="#" pelo link real do repositório ou demonstração -->
-            <a href="#" aria-label="Abrir projeto Sistema simples de formulário com validação">Ver projeto</a>
-          </article>
-        </div>
+        <p class="eyebrow">Habilidades técnicas</p>
+        <h2>Tecnologias e competências</h2>
+        <ul class="skills-list" aria-label="Lista de habilidades técnicas">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>.NET</li>
+          <li>ASP.NET Core</li>
+          <li>Razor Pages</li>
+          <li>SQL Server</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>APIs RESTful</li>
+          <li>Integração entre front-end e back-end</li>
+          <li>Suporte técnico</li>
+          <li>Help desk</li>
+          <li>Git e versionamento</li>
+        </ul>
       </div>
     </section>
 
-    <!-- Seção de contato com validação feita em JavaScript puro -->
-    <section class="section alternate" id="contato">
+    <!-- Links diretos para os canais de contato -->
+    <section class="section" id="contato">
       <div class="section-content contact-grid">
         <div>
           <p class="eyebrow">Contato</p>
           <h2>Vamos conversar?</h2>
-          <p>
-            Use o formulário para enviar uma mensagem simulada. A validação acontece no navegador,
-            mostrando avisos na tela quando algum campo precisa ser corrigido.
-          </p>
+          <p>Entre em contato por e-mail, telefone ou LinkedIn.</p>
         </div>
-
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="usuario@dominio.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
-          </div>
-
-          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
-
-          <button class="button primary form-button" type="submit">Enviar mensagem</button>
-        </form>
+        <address class="contact-card">
+          <a href="mailto:linckv@hotmail.com">
+            <span>E-mail</span>
+            linckv@hotmail.com
+          </a>
+          <a href="tel:+5551980423336">
+            <span>Telefone</span>
+            (51) 98042-3336
+          </a>
+          <a href="https://www.linkedin.com/in/vinicius-dias-linck-a52349160" target="_blank" rel="noopener noreferrer">
+            <span>LinkedIn</span>
+            Perfil de Vinicius Dias Linck
+          </a>
+          <p><span>Localização</span>Canoas, RS, Brasil</p>
+        </address>
       </div>
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer class="site-footer">
-    <p>&copy; 2026 Vinicius. Portfólio desenvolvido com HTML, CSS e JavaScript puro.</p>
+    <p>&copy; 2026 Vinicius Dias Linck. Portfólio desenvolvido com HTML, CSS e JavaScript puro.</p>
   </footer>
 
   <script src="js/script.js"></script>

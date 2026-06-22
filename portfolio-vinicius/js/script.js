@@ -1,18 +1,16 @@
-// Seletores principais usados no menu, tema e formulário.
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 const themeToggle = document.getElementById('themeToggle');
-const contactForm = document.getElementById('contactForm');
-const formFeedback = document.getElementById('formFeedback');
+const themeIcon = document.getElementById('themeIcon');
 
-// Menu responsivo: abre e fecha os links no mobile.
+// Abre ou fecha o menu de navegação em telas menores.
 menuToggle.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
   menuToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
 });
 
-// Fecha o menu mobile quando o usuário clica em um link interno.
+// Fecha o menu depois que o usuário seleciona uma seção.
 navLinks.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
@@ -21,49 +19,26 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
-// Alternância entre tema claro e escuro com persistência em localStorage.
+// Recupera a preferência de tema salva anteriormente no navegador.
 const savedTheme = localStorage.getItem('portfolio-theme');
+
+function updateThemeButton(darkThemeEnabled) {
+  const actionLabel = darkThemeEnabled ? 'Ativar tema claro' : 'Ativar tema escuro';
+
+  themeIcon.textContent = darkThemeEnabled ? '☀' : '☾';
+  themeToggle.setAttribute('aria-label', actionLabel);
+  themeToggle.setAttribute('title', actionLabel);
+}
 
 if (savedTheme === 'dark') {
   document.body.classList.add('dark-theme');
-  themeToggle.textContent = 'Tema claro';
 }
 
+updateThemeButton(savedTheme === 'dark');
+
+// Alterna o tema e salva a nova preferência no armazenamento local.
 themeToggle.addEventListener('click', () => {
   const darkThemeEnabled = document.body.classList.toggle('dark-theme');
-  themeToggle.textContent = darkThemeEnabled ? 'Tema claro' : 'Tema escuro';
+  updateThemeButton(darkThemeEnabled);
   localStorage.setItem('portfolio-theme', darkThemeEnabled ? 'dark' : 'light');
-});
-
-// Mostra mensagens visuais de erro ou sucesso no formulário.
-function showFeedback(message, type) {
-  formFeedback.textContent = message;
-  formFeedback.className = `form-feedback ${type}`;
-}
-
-function isValidEmail(email) {
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailPattern.test(email);
-}
-
-// Validação completa do formulário e simulação de envio.
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  if (!name || !email || !message) {
-    showFeedback('Preencha todos os campos antes de enviar.', 'error');
-    return;
-  }
-
-  if (!isValidEmail(email)) {
-    showFeedback('Digite um e-mail válido, como usuario@dominio.com.', 'error');
-    return;
-  }
-
-  showFeedback('Mensagem enviada com sucesso!', 'success');
-  contactForm.reset();
 });
